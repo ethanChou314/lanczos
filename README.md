@@ -2,6 +2,6 @@ This Python module provides tools for performing Lanczos iterations. It includes
 
 **Key Features**
 * Lanczos Iteration: Efficiently generates a Krylov subspace and reduces a symmetric matrix to tridiagonal form.
-* Re-orthogonalization: Uses a double-pass modified Gram-Schmidt process to prevent the "ghost eigenvalues" caused by loss of orthogonality in floating-point arithmetic.
+* Re-orthogonalization: Uses the Gram-Schmidt process every iteration to prevent artificial eigenvalues caused by loss of orthogonality in floating-point arithmetic.
 * Determining Convergence: Iteratively increases the subspace size $m$ until the requested $k$ eigenvalues stabilize.
 * Multiple Selection Modes: Find eigenvalues based on: smallest or largest algebraic value, smallest abs or largest abs magnitude, or arbitrary (the first $k$ found).
